@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+body{
+  font-family: 'Nanum Gothic Coding', monospace;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.nav {
+  background-color: #353A3F;
+  width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.nav_container {
+  /* padding: 0 30px; */
+  margin :0 auto;
+}
+
+.nav_title {
+  width: 100%;
+  color : #fff;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #353A3F;
+  box-sizing: border-box;
+}
+
+.icons {
+  display: flex;
+  flex-direction : row;
+  justify-content: space-around;
+  color : #6D747C;
+  /* padding : 1.25rem 1.25rem 1px; */
+  padding : 1.25rem;
+  background-color: #303439;
+}
+
+.icon {
+  padding : 10px 15px;
+  border : 1px solid #6D747C;
+  border-radius: 5px;
+}
+
+.icon:hover{
+  background-color: #6D747C;
+  color : #fff;
+}
+/*********************************************/
+.content_container {
+  padding : 1.25rem;
+}
+
+
+
+.dashboard_btn{
+  color : #fff;
+  background-color: #1d2124;
+  padding:.5rem .625rem;
+  box-sizing: border-box;
+  align-items: center;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+}
+
+.dashboard_btn_icon{
+  color:#678DC1
+}
+
+.badge {
+  box-sizing: border-box;
+  position: absolute;
+  right: 10px;
+  border-radius: 10rem;
+  background-color:#2A66C9;
+  padding: .20em .45em;
+  text-align: center; 
+  font-size: .75rem;
+  /* display: inline-block; */
+  /* white-space: nowrap;
+  font-weight: 600; */
+}
+
+/*********************************************/
+
+.main_item_heading{
+  color: #a0b1d4;
+  /* border : 1px solid red; */
+  width: 100%;
+  padding-top:1.75rem;
+  padding-bottom :.25rem
+}
+
+.main_items{
+  /* padding:.5rem .625rem; */
+}
+
+.main_item_link_submenu{
+  display: block;
+  box-sizing: border-box;
+  color : #fff;
+  padding:.5rem .625rem;
+  border-radius: 5px;
+  position: relative;
+}
+.main_item_link_submenu_icon {
+  color:#678DC1
+}
+.main_item_link_submenu_btn_icon {
+  position: absolute;
+  right:10px;
+  color:#7C8187;
+}
+
+.main_item_submenu {
+  padding-left:2.25rem;
+  background-color: #2A2D32;
+  display: none;
+}
+
+.main_items > .main_item_link_submenu:hover {
+  background-color: #1E2124;
+}
+
+.main_item_submenu.visible {
+  display: block;
+}

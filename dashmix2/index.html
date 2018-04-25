@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>어드민 페이지</title>
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./common.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <script type="text/javascript" src="./script.js"></script>
+  <nav class="nav">
+    <!-- 메인 타이틀 -->
+    <div class="nav_container">
+      <div class="nav_title">
+        <span>관리자 페이지</span>
+      </div>
+      <!-- 아이콘 -->
+      <div class="icons">
+        <div class="icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-cog"></i>
+        </div>
+      </div>
+      <!-- contents -->
+      <div class="content_container">
+        <!-- 대쉬보드 버튼 -->
+        <ul>
+
+          <li>
+            <a class="dashboard_btn" href="#">
+              <i class="fas dashboard_btn_icon fa-cog"></i>
+              <span class="dashboard_btn_name">Dashboard</span>
+              <span class="badge">3</span>
+            </a>
+          </li>
+          <!-- 매니지 -->
+          <li class="main_item_heading">
+            MANAGE
+          </li>
+          <!--  -->
+          <li class="main_items">
+            <a id="Project" class="main_item_link_submenu" href="#">
+              <i class="fas main_item_link_submenu_icon fa-cog"></i>
+              Project
+              <i class="fas main_item_link_submenu_btn_icon fa-angle-down"></i>
+            </a>
+            <ul class="main_item_submenu">
+              <li class="main_item">
+                <a class="main_item_link_submenu" href="#">
+                  <i class="fas main_item_link_submenu_icon fa-cog"></i>
+                  New
+                </a>
+              </li>
+              <li class="main_item">
+                <a class="main_item_link_submenu" href="#">
+                  <i class="fas main_item_link_submenu_icon fa-cog"></i>
+                  Active
+                </a>
+              </li>
+              <li class="main_item">
+                <a class="main_item_link_submenu" href="#">
+                  <i class="fas main_item_link_submenu_icon fa-cog"></i>
+                  Manage
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <!-- 매니지 -->
+          <li class="main_item_heading">
+            SETTINGS
+          </li>
+          <li class="main_items">
+            <a class="main_item_link_submenu" href="#">
+              <i class="fas main_item_link_submenu_icon fa-cog"></i>
+              Profile
+              <i class="fas main_item_link_submenu_btn_icon fa-angle-down"></i>
+            </a>
+            <ul class="main_item_submenu">
+              <li class="main_item">
+                <a class="main_item_link_submenu" href="#">
+                  <i class="fas main_item_link_submenu_icon fa-cog"></i>
+                  New
+                </a>
+              </li>
+              <li class="main_item">
+                <a class="main_item_link_submenu" href="#">
+                  <i class="fas main_item_link_submenu_icon fa-cog"></i>
+                  Manage
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- 매니지 -->
+      <!-- 세팅 -->
+      <!-- 백버튼 -->
+    </div>
+
+  </nav>
+</body>
+
+</html>

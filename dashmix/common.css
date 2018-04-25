@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+body{
+  font-family: 'Nanum Gothic Coding', monospace;
+  background-color: #fff;
+  height: 100vh;
+}
+
+/* 전체 */
+.left_menu {
+  width: 300px;
+  height:100%;
+  background-color: #353A3F;
+  padding: 10px 10px;
+}
+
+.menu_title {
+  color : #fff;
+  margin : 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.icons {
+  display: flex;
+  flex-direction : row;
+  justify-content: space-around;
+  color : #fff;
+  padding : 10px 10px;
+  background-color: #303439;
+}
+
+.icon {
+  padding : 10px 15px;
+  border : 1px solid #fff;
+}
+
+.dashboard {
+  padding : 10px 10px;
+  background-color: blue;
+}
+
+.dashboard_btn {
+  position: relative;
+  display: inline-block;
+  background-color: #1E2124;
+  color : #fff;
+  width: 100%;
+  padding :10px 10px;
+  align-items:  center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.badge {
+  position: absolute;
+  right : 10px;
+  border-radius : 50%;
+  background-color: #2963C3;
+  text-align: center;
+  width : 18px;
+  height: 18px;
+}
+
+.title {
+  padding :10px 10px;
+  color :#E7EBF3;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.items{
+  /* padding : 10px 10px; */
+  /* display: inline-block; */
+}
+
+.items_wrapper{  
+  display: block;
+  position: relative;
+  color : #fff;
+  padding : 10px 10px;
+  background-color: #1E2124;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item {
+  background-color: #2A2D32;
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.item_sub {
+  display: block;
+  color : #B8BBC2;
+  padding: 10px 10px;
+  animation: fadeinright 1s cubic-bezier(1,.01,1,1) 0s;
+}
+
+.item.visible {
+  display: block;
+}
+
+.dropdown_btn {
+  position: absolute;
+  right: 10px;
+}
+
+.items.opend > .item{
+  display: block;
+}
+
+
+@keyframes fadeinright {
+  0% {
+    opacity: 0;
+    transform: translateX(20px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px)
+
+  }
+}
+
+.fa-angle-down {
+/* position: relative; */
+  /* margin: auto; */
+}
+/* 기본 */
+.fa-angle-down:before {
+  position: absolute;
+  right : 10px;
+  /* transform: translateY(8px) */
+  transition: transform 1s, opacity 1s;
+}
+
+.fa-angle-down:after {
+  position: absolute;
+  opacity: 0;
+  content : "\f106";
+  right : 10px;
+  transform: translateY(-8px);
+  transition: transform 1s, opacity 1s;
+}
+/* 열렸을때  */
+.opend > a > .fa-angle-down:before{
+  opacity: 0;
+  transform: translateY(8px)
+}
+
+.opend > a > .fa-angle-down:after{
+  opacity: 1;
+  transform: translateY(0px)
+}
